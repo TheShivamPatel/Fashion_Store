@@ -32,7 +32,7 @@ class CartBagAdapter(
 
             val user = list[i]
             i++
-            Firebase.firestore.collection("products").document(user).get()
+            Firebase.firestore.collection("products").document(user.toString()).get()
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         val doc = task.result

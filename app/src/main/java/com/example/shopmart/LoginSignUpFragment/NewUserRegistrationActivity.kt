@@ -5,10 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import com.example.shopmart.MainActivity
-import com.example.shopmart.R
 import com.example.shopmart.databinding.ActivityNewUserRegistrationBinding
+import com.example.shopmart.model.UserModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -50,14 +49,7 @@ class NewUserRegistrationActivity : AppCompatActivity() {
             .create()
         builder.show()
 
-        val favouriteList : ArrayList<String> = ArrayList()
-        val shoppingBag : ArrayList<String> = ArrayList()
-
-        val data = hashMapOf<String , Any>()
-        data["name"] = binding.nameEdt.text.toString()
-        data["number"] = intent.getStringExtra("number")!!
-        data["favouriteList"] = favouriteList
-        data["shoppingBag"] = shoppingBag
+        val data = UserModel(name= binding.nameEdt.text.toString() , number= intent.getStringExtra("number").toString())
 
 
         Firebase.firestore.collection("users").document(FirebaseAuth.getInstance().currentUser!!.uid).set(data)

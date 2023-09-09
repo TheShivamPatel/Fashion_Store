@@ -72,7 +72,10 @@ dependencies {
     // lottie files
     implementation 'com.airbnb.android:lottie:6.1.0'
 
-    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    // razorpay
+    implementation 'com.razorpay:checkout:1.6.33'
 
+    // scrach card
+    implementation 'com.github.AnupKumarPanwar:ScratchView:1.9.1'
 
 }

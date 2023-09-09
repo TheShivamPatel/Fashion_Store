@@ -35,14 +35,6 @@ class HomeFragment : Fragment() {
 
 
         getSliderImage()
-        getCategoryFromFirebase()
-        getProductsFromFirebase()
-
-        binding.logoutBtn.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(requireContext() , PhoneLoginActivity::class.java))
-            activity?.finish()
-        }
 
         return binding.root
     }
@@ -54,7 +46,7 @@ class HomeFragment : Fragment() {
                 Glide.with(requireContext()).load(it.get("img")).into(binding.brandSliderImage)
                 binding.brandPromoTxt.text = it.get("brand").toString()
             }
-
+        getCategoryFromFirebase()
     }
     // ------------------------ on create ended ---------------------------//
 
@@ -71,6 +63,7 @@ class HomeFragment : Fragment() {
                 }
                 binding.categoryRv.adapter = CategoryAdapter(requireContext(), list)
             }
+        getProductsFromFirebase()
     }
 
     // ------------------------- getting all products form firebase ------------//

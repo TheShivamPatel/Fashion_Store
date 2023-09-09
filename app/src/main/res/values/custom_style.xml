@@ -10,4 +10,9 @@
         <item name="cornerSize">20%</item>
     </style>
 
+    <style name="Round">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
 </resources>

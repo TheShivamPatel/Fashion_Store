@@ -58,15 +58,6 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
-                <ImageView
-                    android:id="@+id/logout_btn"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logout" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -108,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 tools:listitem="@layout/layout_category_item"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 

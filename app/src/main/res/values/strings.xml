@@ -6,4 +6,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="desc">Product description Product description Product description Product description Product description</string>
+    <string name="confirm_order">Your order is currently being processed. You will recive an order confirmation email shortly with the expected delivery date for your items</string>
+    <string name="earn_redeem"><![CDATA[Earn & Redeem]]></string>
 </resources>

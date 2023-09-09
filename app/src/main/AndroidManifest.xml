@@ -15,6 +15,18 @@
         android:theme="@style/Theme.ShopMart"
         tools:targetApi="31">
         <activity
+            android:name=".activity.OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CompleteOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CheckOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddressDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginSignUpFragment.NewUserRegistrationActivity"
             android:exported="false" />
         <activity
@@ -22,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".LoginSignUpFragment.OTPActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ProductDetailActivity"
