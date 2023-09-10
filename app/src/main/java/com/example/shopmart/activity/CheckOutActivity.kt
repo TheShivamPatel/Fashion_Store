@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.shopmart.R
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.razorpay.Checkout
@@ -99,6 +100,9 @@ class CheckOutActivity : AppCompatActivity() , PaymentResultListener {
         db.document(key).set(data)
             .addOnSuccessListener {
                 Toast.makeText(this, "Order details saved." , Toast.LENGTH_SHORT).show()
+
+                Firebase.firestore.collection("users").document(currentUser).update("shoppingBag", FieldValue.arrayRemove(productId))
+
             }
             .addOnFailureListener {
                 Toast.makeText(this, "Error in saving order details." , Toast.LENGTH_SHORT).show()

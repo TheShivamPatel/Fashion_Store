@@ -26,7 +26,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="30dp"
             android:orientation="vertical"
             android:padding="12dp">
 
@@ -83,17 +82,7 @@
                     android:layout_marginStart="10dp"/>
 
             </LinearLayout>
-
-
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/order_detail"
-            android:layout_width="20dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="-25dp"
-            android:src="@drawable/baseline_arrow_forward_ios_24" />
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

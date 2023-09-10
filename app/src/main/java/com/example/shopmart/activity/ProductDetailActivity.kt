@@ -117,8 +117,7 @@ class ProductDetailActivity : AppCompatActivity() {
             binding.productDesc.text = desc
 
             val content = "MRP ₹${it.getString("productMrp")}"
-            binding.productMrp.paintFlags =
-                binding.productMrp.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+            binding.productMrp.paintFlags = binding.productMrp.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
             binding.productMrp.text = content
 
 

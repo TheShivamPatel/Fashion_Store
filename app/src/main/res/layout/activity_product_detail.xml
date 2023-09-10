@@ -125,6 +125,7 @@
                 android:fontFamily="@font/heebo"
                 android:text="WISHLIST"
                 app:cornerRadius="3dp"
+                android:visibility="gone"
                 app:icon="@drawable/baseline_favorite_border_24"
                 app:iconGravity="textStart" />
 

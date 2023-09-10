@@ -114,7 +114,7 @@
                     android:fontFamily="@font/heebo_medium"
                     android:text="Products"
                     android:textSize="22sp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
